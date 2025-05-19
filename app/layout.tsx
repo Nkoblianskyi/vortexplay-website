@@ -1,11 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Lora } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ScrollToTop } from "@/components/scroll-to-top"
 
-const inter = Inter({ subsets: ["latin", "latin-ext"] })
+const inter = Lora({ subsets: ["latin" ] })
 
 export const metadata: Metadata = {
   title: "VortexPlay Studio - Twórcy gry Knightblade",
