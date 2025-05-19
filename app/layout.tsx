@@ -10,7 +10,6 @@ const inter = Inter({ subsets: ["latin", "latin-ext"] })
 export const metadata: Metadata = {
   title: "VortexPlay Studio - Twórcy gry Knightblade",
   description: "Oficjalna strona studia VortexPlay, twórców gry Knightblade - rycerskiej przygody RPG",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
