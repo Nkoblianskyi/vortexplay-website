@@ -8,8 +8,8 @@ import { ScrollToTop } from "@/components/scroll-to-top"
 const inter = Lora({ subsets: ["latin" ] })
 
 export const metadata: Metadata = {
-  title: "VortexPlay Studio - Twórcy gry Knightblade",
-  description: "Oficjalna strona studia VortexPlay, twórców gry Knightblade - rycerskiej przygody RPG",
+  title: "VortexPlay Studio - Twórcy gry DarkRise",
+  description: "Oficjalna strona studia VortexPlay, twórców gry DarkRise - rycerskiej przygody RPG",
 }
 
 export default function RootLayout({
