@@ -79,8 +79,8 @@ export function Header() {
           <NavLink href="/nasze-uslugi" active={isActive("/nasze-uslugi")} onClick={handleClick}>
             NASZE USŁUGI
           </NavLink>
-          <NavLink href="/knightblade" active={isActive("/knightblade")} onClick={handleClick}>
-            KNIGHTBLADE
+          <NavLink href="/darkrise" active={isActive("/darkrise")} onClick={handleClick}>
+            Darkrise
           </NavLink>
           <NavLink href="/kontakt" active={isActive("/kontakt")} onClick={handleClick}>
             SKONTAKTUJ SIĘ Z NAMI
@@ -161,8 +161,9 @@ function MobileNavLink({ href, children, active, onClick }: NavLinkProps) {
   return (
     <Link
       href={href}
-      className={`block py-3 px-4 text-lg font-medium rounded-md transition-colors ${active ? "bg-primary/20 text-primary" : "hover:bg-zinc-800/50"
-        }`}
+      className={`block py-3 px-4 text-lg font-medium rounded-md transition-colors ${
+        active ? "bg-primary/20 text-primary" : "hover:bg-zinc-800/50"
+      }`}
       onClick={onClick}
     >
       {children}

@@ -9,19 +9,19 @@ export function About() {
           <FadeIn direction="left">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">O VORTEXPLAY STUDIO</h2>
             <p className="mt-4 text-zinc-400 md:text-xl">
-              VortexPlay Studio to zespół pasjonatów gier retro, którzy postanowili połączyć nostalgię za klasycznymi
-              RPG z nowoczesnymi mechanikami rozgrywki. Naszą misją jest tworzenie gier, które przenoszą graczy w światy
-              pełne przygód, tajemnic i wyzwań.
+              VortexPlay Studio to zespół pasjonatów gier retro, którzy łączą nostalgię za klasycznymi RPG z
+              nowoczesnymi mechanikami rozgrywki. Naszą misją jest tworzenie koncepcji gier, które przenoszą graczy w
+              światy pełne przygód, tajemnic i wyzwań.
             </p>
             <p className="mt-4 text-zinc-400 md:text-xl">
-              Knightblade to nasza flagowa produkcja, nad którą pracowaliśmy z pasją i zaangażowaniem. Każdy piksel,
-              każda linia dialogowa i każdy element rozgrywki został starannie zaprojektowany, aby zapewnić graczom
-              niezapomniane doświadczenie.
+              Knightblade to nasza flagowa koncepcja, nad którą pracujemy z pasją i zaangażowaniem. Każdy piksel, każda
+              linia dialogowa i każdy element rozgrywki jest starannie projektowany, aby zapewnić graczom niezapomniane
+              doświadczenie w naszej wizji gry.
             </p>
             <p className="mt-4 text-zinc-400 md:text-xl">
               Wierzymy, że gry powinny nie tylko bawić, ale również inspirować i angażować emocjonalnie. Dlatego w
-              Knightblade znajdziesz nie tylko wyzwania i walki, ale również poruszającą historię i możliwość
-              podejmowania decyzji, które wpłyną na losy całego wirtualnego świata.
+              naszej koncepcji Knightblade znajdziesz nie tylko wyzwania i walki, ale również poruszającą historię i
+              możliwość podejmowania decyzji, które wpłyną na losy całego wirtualnego świata.
             </p>
           </FadeIn>
           <FadeIn direction="right" delay={0.3}>

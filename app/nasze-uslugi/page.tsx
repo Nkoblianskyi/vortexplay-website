@@ -28,14 +28,14 @@ export default function NaszeUslugiPage() {
                 z techniczną wiedzą, aby dostarczać gry, które angażują, bawią i inspirują.
               </p>
               <p className="text-zinc-200">
-                Nasza flagowa produkcja, Knightblade, jest doskonałym przykładem naszych możliwości i pasji do tworzenia
+                Nasza flagowa produkcja, Darkrise, jest doskonałym przykładem naszych możliwości i pasji do tworzenia
                 gier, które łączą nostalgię za klasycznymi tytułami z nowoczesnymi mechanikami rozgrywki.
               </p>
             </div>
             <div className="rounded-lg overflow-hidden border border-zinc-800">
               <Image
-                src="/e3da0a3209b0797b8fc1fb2e90a2155a.jpg"
-                alt="Zespół deweloperski VortexPlay Studio"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JRqxeWIDYOfwHP2mK2CzhHTzJYdUjG.png"
+                alt="Drzewo umiejętności w grze Darkrise"
                 width={600}
                 height={400}
                 className="w-full h-auto"
@@ -235,8 +235,8 @@ export default function NaszeUslugiPage() {
               </div>
               <div className="rounded-lg overflow-hidden border border-zinc-800">
                 <Image
-                  src="/knightblade-shop.png"
-                  alt="Interfejs sklepu w grze Knightblade"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9j1gVwXBQHEQJgk7yU17IZwEwWdJ3C.png"
+                  alt="System craftingu w grze Darkrise"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -252,8 +252,8 @@ export default function NaszeUslugiPage() {
               <div className="order-2 lg:order-1">
                 <div className="rounded-lg overflow-hidden border border-zinc-800">
                   <Image
-                    src="/knightblade-world.png"
-                    alt="Mapa świata w grze Knightblade"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-V3YLq4WSCJFBu58dcNyaXC2t859sjz.png"
+                    alt="Walka w grze Darkrise"
                     width={600}
                     height={400}
                     className="w-full h-auto"
@@ -461,8 +461,8 @@ export default function NaszeUslugiPage() {
               </div>
               <div className="rounded-lg overflow-hidden border border-zinc-800">
                 <Image
-                  src="/knightblade-autumn.png"
-                  alt="Jesienna sceneria w grze Knightblade"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8WNJ34ctMEPlKLefKqF1N8OCBqDEy7.png"
+                  alt="Efekty wizualne w grze Darkrise"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -521,35 +521,55 @@ export default function NaszeUslugiPage() {
             <div className="order-2 lg:order-1">
               <ScreenshotSlider
                 images={[
-                  { src: "/knightblade-farm.png", alt: "Knightblade - farma" },
-                  { src: "/knightblade-winter.png", alt: "Knightblade - zimowa wioska" },
-                  { src: "/knightblade-tavern.png", alt: "Knightblade - karczma" },
-                  { src: "/knightblade-autumn.png", alt: "Knightblade - jesienna sceneria" },
-                  { src: "/knightblade-world.png", alt: "Knightblade - mapa świata" },
-                  { src: "/knightblade-dungeon.png", alt: "Knightblade - loch" },
-                  { src: "/knightblade-shop.png", alt: "Knightblade - sklep" },
-                  { src: "/knightblade-dual-screenshot.png", alt: "Knightblade - walka i wioska" },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-V3YLq4WSCJFBu58dcNyaXC2t859sjz.png",
+                    alt: "Darkrise - walka w lesie",
+                  },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Yy5pirLMIlfVjDyVPosGm9aJEJmt59.png",
+                    alt: "Darkrise - dialog z NPC",
+                  },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-p8Mfh1cFHKj4jk812RLXzaTxo98d5U.png",
+                    alt: "Darkrise - walka na cmentarzu",
+                  },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8WNJ34ctMEPlKLefKqF1N8OCBqDEy7.png",
+                    alt: "Darkrise - walka w lochu",
+                  },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xWPBsupZm7mQYC7PZb7DZhWlQlSeYi.png",
+                    alt: "Darkrise - magiczne ataki",
+                  },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JRqxeWIDYOfwHP2mK2CzhHTzJYdUjG.png",
+                    alt: "Darkrise - drzewo umiejętności",
+                  },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9j1gVwXBQHEQJgk7yU17IZwEwWdJ3C.png",
+                    alt: "Darkrise - system craftingu",
+                  },
                 ]}
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h3 className="text-xl font-bold mb-2">Knightblade: Rycerska Odyseja</h3>
+              <h3 className="text-xl font-bold mb-2">Darkrise: Pixel Action RPG</h3>
               <p className="mb-4 text-zinc-200">
-                Knightblade to nasza flagowa produkcja - retro gra RPG z otwartym światem, która łączy nostalgię za
-                klasycznymi grami z nowoczesnymi mechanikami rozgrywki. Jest doskonałym przykładem naszych możliwości i
-                pasji do tworzenia wyjątkowych doświadczeń dla graczy.
+                Darkrise to nasza flagowa produkcja - klasyczna hardkorowa gra RPG w stylu pixel art, stworzona przez
+                niezależnych deweloperów. Jest doskonałym przykładem naszych możliwości i pasji do tworzenia gier, które
+                łączą nostalgię za klasycznymi tytułami z nowoczesnymi mechanikami rozgrywki.
               </p>
               <p className="mb-6 text-zinc-200">
-                Gra oferuje połączenie eksploracji otwartego świata, turowych walk z potworami, zarządzania farmą i
-                rozbudowanej fabuły. Wszystko to w pięknej, pikselowej oprawie graficznej, która przywołuje wspomnienia
-                złotej ery gier RPG.
+                Gra oferuje wybór spośród 4 klas postaci (Mag, Wojownik, Łucznik i Rozbójnik), dynamiczny system walki,
+                około 100 lokacji i rozbudowany system ekwipunku. Wszystko to w pięknej, pikselowej oprawie graficznej,
+                która przywołuje wspomnienia złotej ery gier RPG.
               </p>
               <div className="flex flex-row gap-4">
                 <Link href="/knightblade">
                   <Button variant="outline">Dowiedz się więcej</Button>
                 </Link>
                 <Link
-                  href="https://play.google.com/store/apps/details?id=com.rpgmaker.only"
+                  href="https://play.google.com/store/apps/details?id=com.Roika.Darkrise"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

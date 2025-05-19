@@ -20,22 +20,80 @@ export function HoverVideoPlayer({ src, poster, className = "", title }: HoverVi
   const videoRef = useRef<HTMLVideoElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const [showControls, setShowControls] = useState(false)
+  const playPromiseRef = useRef<Promise<void> | null>(null)
+  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
-  // Obsługa odtwarzania wideo po najechaniu myszką
+  // Obsługa odtwarzania wideo po najechaniu myszką z opóźnieniem
   useEffect(() => {
+    // Anuluj poprzedni timeout jeśli istnieje
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current)
+      hoverTimeoutRef.current = null
+    }
+
     if (videoRef.current) {
       if (isHovering) {
-        videoRef.current.play().catch((error) => {
-          console.error("Autoplay failed:", error)
-        })
+        // Dodaj małe opóźnienie przed rozpoczęciem odtwarzania, aby uniknąć niepotrzebnych wywołań
+        // przy szybkim przesunięciu myszy nad elementem
+        hoverTimeoutRef.current = setTimeout(() => {
+          if (videoRef.current && !isPlaying(videoRef.current)) {
+            // Zapisz promise z metody play()
+            try {
+              playPromiseRef.current = videoRef.current.play()
+              if (playPromiseRef.current) {
+                playPromiseRef.current.catch((error) => {
+                  console.error("Autoplay failed:", error)
+                  playPromiseRef.current = null
+                })
+              }
+            } catch (error) {
+              console.error("Error during play:", error)
+              playPromiseRef.current = null
+            }
+          }
+        }, 100)
       } else {
-        videoRef.current.pause()
-        if (!isFullscreen) {
-          videoRef.current.currentTime = 0
+        // Bezpieczne zatrzymanie wideo
+        const safelyPauseVideo = () => {
+          if (videoRef.current) {
+            try {
+              videoRef.current.pause()
+              if (!isFullscreen && videoRef.current) {
+                videoRef.current.currentTime = 0
+              }
+            } catch (error) {
+              console.error("Error during pause:", error)
+            }
+          }
+        }
+
+        // Sprawdź czy istnieje aktywny promise przed wywołaniem pause()
+        if (playPromiseRef.current) {
+          playPromiseRef.current
+            .then(() => {
+              safelyPauseVideo()
+              playPromiseRef.current = null
+            })
+            .catch(() => {
+              playPromiseRef.current = null
+            })
+        } else {
+          safelyPauseVideo()
         }
       }
     }
+
+    return () => {
+      if (hoverTimeoutRef.current) {
+        clearTimeout(hoverTimeoutRef.current)
+      }
+    }
   }, [isHovering, isFullscreen])
+
+  // Sprawdza czy wideo jest aktualnie odtwarzane
+  const isPlaying = (video: HTMLVideoElement): boolean => {
+    return !!(video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2)
+  }
 
   // Obsługa trybu pełnoekranowego
   useEffect(() => {
@@ -153,9 +211,8 @@ export function HoverVideoPlayer({ src, poster, className = "", title }: HoverVi
 
       {/* Controls overlay */}
       <div
-        className={`absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transition-opacity duration-300 ${
-          showControls && isHovering ? "opacity-100" : "opacity-0"
-        }`}
+        className={`absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transition-opacity duration-300 ${showControls && isHovering ? "opacity-100" : "opacity-0"
+          }`}
       >
         <div className="flex justify-between items-center">
           <div className="text-white text-sm">{title && <span className="font-medium">{title}</span>}</div>

@@ -9,9 +9,9 @@ export function Features() {
       <div className="container mx-auto px-4 md:px-6">
         <FadeIn className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">ODKRYJ ŚWIAT KNIGHTBLADE</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">ODKRYJ ŚWIAT DARKRISE</h2>
             <p className="mx-auto max-w-[700px] text-zinc-400 md:text-xl">
-              Poznaj główne cechy naszej gry, które sprawią, że nie będziesz mógł się od niej oderwać.
+              Poznaj główne cechy gry, które sprawią, że nie będziesz mógł się od niej oderwać.
             </p>
           </div>
         </FadeIn>
@@ -39,9 +39,9 @@ export function Features() {
                   <polyline points="14 2 14 8 20 8" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Otwarty świat</h3>
+              <h3 className="text-xl font-bold">100 lokacji</h3>
               <p className="text-zinc-400 text-center">
-                Eksploruj rozległy, piksełowy świat pełen tajemnic, ukrytych skarbów i niebezpiecznych lochów.
+                Eksploruj różnorodne lokacje, od lasów po lochy, każda z unikalnymi wyzwaniami i przeciwnikami.
               </p>
             </div>
           </StaggerItem>
@@ -63,9 +63,9 @@ export function Features() {
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Epickie walki</h3>
+              <h3 className="text-xl font-bold">4 klasy postaci</h3>
               <p className="text-zinc-400 text-center">
-                Zmierz się z potężnymi bossami, ulepsz swój ekwipunek i opanuj różne style walki.
+                Wybierz spośród Maga, Wojownika, Łucznika i Rozbójnika, każdy z unikalnymi umiejętnościami.
               </p>
             </div>
           </StaggerItem>
@@ -89,9 +89,9 @@ export function Features() {
                   <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Rozbudowana fabuła</h3>
+              <h3 className="text-xl font-bold">Dynamiczna walka</h3>
               <p className="text-zinc-400 text-center">
-                Odkryj fascynującą historię swojego bohatera i wpłyń na losy całego królestwa.
+                System walki pełen efektów wizualnych, szybkich ataków i intensywnej akcji.
               </p>
             </div>
           </StaggerItem>
@@ -114,9 +114,9 @@ export function Features() {
                   <path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Zarządzanie farmą</h3>
+              <h3 className="text-xl font-bold">System craftingu</h3>
               <p className="text-zinc-400 text-center">
-                Uprawiaj rośliny, hoduj zwierzęta i rozwijaj swoją farmę, aby zdobyć dodatkowe zasoby.
+                Twórz, ulepszaj i przekuwaj swój ekwipunek, aby stać się potężniejszym w walce.
               </p>
             </div>
           </StaggerItem>
@@ -141,9 +141,9 @@ export function Features() {
                   <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Interakcje z NPC</h3>
+              <h3 className="text-xl font-bold">Unikalni wrogowie</h3>
               <p className="text-zinc-400 text-center">
-                Rozmawiaj z mieszkańcami, wykonuj zadania i buduj relacje, które wpłyną na rozwój fabuły.
+                Walcz z różnorodnymi przeciwnikami, każdy z własnymi umiejętnościami i taktykami.
               </p>
             </div>
           </StaggerItem>
@@ -166,13 +166,37 @@ export function Features() {
                   <circle cx="17" cy="7" r="5" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Rzemiosło</h3>
+              <h3 className="text-xl font-bold">Rozbudowany ekwipunek</h3>
               <p className="text-zinc-400 text-center">
-                Zbieraj surowce i twórz własne przedmioty, broń i zbroje, aby zwiększyć swoje szanse w walce.
+                8 typów i 6 poziomów rzadkości ekwipunku, system kamieni i kart do personalizacji.
               </p>
             </div>
           </StaggerItem>
         </StaggerChildren>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          <FadeIn delay={0.6} direction="left">
+            <div className="rounded-lg overflow-hidden border border-zinc-800 hover:border-primary transition-colors duration-300 hover:shadow-lg hover:shadow-primary/20">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8WNJ34ctMEPlKLefKqF1N8OCBqDEy7.png"
+                alt="Darkrise - walka w lochu"
+                width={600}
+                height={400}
+                className="w-full h-auto hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </FadeIn>
+          <FadeIn delay={0.8} direction="right">
+            <div className="rounded-lg overflow-hidden border border-zinc-800 hover:border-primary transition-colors duration-300 hover:shadow-lg hover:shadow-primary/20">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xWPBsupZm7mQYC7PZb7DZhWlQlSeYi.png"
+                alt="Darkrise - magiczne ataki"
+                width={600}
+                height={400}
+                className="w-full h-auto hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </FadeIn>
+        </div>
       </div>
     </section>
   )

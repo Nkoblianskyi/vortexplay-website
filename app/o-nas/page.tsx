@@ -7,7 +7,7 @@ import { ScreenshotSlider } from "@/components/screenshot-slider"
 
 export default function ONasPage() {
   return (
-    <PageLayout title="O nas" description="Poznaj VortexPlay Studio - twórców gry Knightblade">
+    <PageLayout title="O nas" description="Poznaj VortexPlay Studio - twórców gry Darkrise">
       <div className="space-y-12">
         {/* Sekcja o firmie */}
         <section className="space-y-6">
@@ -17,13 +17,13 @@ export default function ONasPage() {
               <p className="mb-4 text-zinc-200">
                 VortexPlay Studio to niezależne studio deweloperskie z siedzibą w Warszawie, specjalizujące się w
                 tworzeniu gier retro z nowoczesnym podejściem. Nasza pasja do klasycznych gier RPG i chęć tworzenia
-                unikalnych doświadczeń dla graczy doprowadziła nas do stworzenia Knightblade - naszego flagowego
-                projektu.
+                unikalnych doświadczeń dla graczy doprowadziła nas do współpracy przy grze Darkrise - naszym flagowym
+                projekcie.
               </p>
               <p className="mb-4 text-zinc-200">
                 Założone w 2020 roku przez grupę pasjonatów gier retro, nasze studio łączy nostalgię za złotą erą gier
                 wideo z innowacyjnymi mechanikami rozgrywki. Wierzymy, że najlepsze gry to te, które potrafią przenieść
-                graczy w inny świat, jednocześnie oferując im swobodę eksploracji i odkrywania na własnych zasadach.
+                graczy w inny świat, jednocześnie oferując im dynamiczną akcję i możliwość rozwoju postaci.
               </p>
               <p className="text-zinc-200">
                 Naszą misją jest tworzenie gier, które nie tylko bawią, ale również inspirują i angażują emocjonalnie.
@@ -32,8 +32,8 @@ export default function ONasPage() {
             </div>
             <div className="rounded-lg overflow-hidden border border-zinc-800">
               <Image
-                src="/unnamed.webp"
-                alt="Zespół VortexPlay Studio"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JRqxeWIDYOfwHP2mK2CzhHTzJYdUjG.png"
+                alt="Drzewo umiejętności w grze Darkrise"
                 width={600}
                 height={400}
                 className="w-full h-auto"
@@ -50,7 +50,7 @@ export default function ONasPage() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-2">Pasja</h3>
                 <p className="text-zinc-400">
-                  Tworzymy gry, które sami chcielibyśmy grać. Każdy projekt jest napędzany naszą pasją do tworzenia
+                  Tworzymy gry, w które sami chcielibyśmy grać. Każdy projekt jest napędzany naszą pasją do tworzenia
                   wyjątkowych doświadczeń dla graczy.
                 </p>
               </CardContent>
@@ -60,7 +60,7 @@ export default function ONasPage() {
                 <h3 className="text-xl font-bold mb-2">Jakość</h3>
                 <p className="text-zinc-400">
                   Wierzymy w jakość ponad ilość. Wolimy spędzić więcej czasu na dopracowaniu każdego szczegółu, niż
-                  wypuszczać niedokończone produkty.
+                  tworzyć niedopracowane gry.
                 </p>
               </CardContent>
             </Card>
@@ -78,45 +78,65 @@ export default function ONasPage() {
 
         {/* Sekcja o naszej grze */}
         <section className="space-y-6">
-          <h2 className="text-2xl font-bold mb-4">Nasza gra: Knightblade</h2>
+          <h2 className="text-2xl font-bold mb-4">Nasza gra: Darkrise</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="order-2 lg:order-1">
               <ScreenshotSlider
                 images={[
-                  { src: "/knightblade-farm.png", alt: "Knightblade - farma" },
-                  { src: "/knightblade-winter.png", alt: "Knightblade - zimowa wioska" },
-                  { src: "/knightblade-tavern.png", alt: "Knightblade - karczma" },
-                  { src: "/knightblade-autumn.png", alt: "Knightblade - jesienna sceneria" },
-                  { src: "/knightblade-world.png", alt: "Knightblade - mapa świata" },
-                  { src: "/knightblade-dungeon.png", alt: "Knightblade - loch" },
-                  { src: "/knightblade-shop.png", alt: "Knightblade - sklep" },
-                  { src: "/knightblade-dual-screenshot.png", alt: "Knightblade - walka i wioska" },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-V3YLq4WSCJFBu58dcNyaXC2t859sjz.png",
+                    alt: "Darkrise - walka w lesie",
+                  },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Yy5pirLMIlfVjDyVPosGm9aJEJmt59.png",
+                    alt: "Darkrise - dialog z NPC",
+                  },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-p8Mfh1cFHKj4jk812RLXzaTxo98d5U.png",
+                    alt: "Darkrise - walka na cmentarzu",
+                  },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8WNJ34ctMEPlKLefKqF1N8OCBqDEy7.png",
+                    alt: "Darkrise - walka w lochu",
+                  },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xWPBsupZm7mQYC7PZb7DZhWlQlSeYi.png",
+                    alt: "Darkrise - magiczne ataki",
+                  },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JRqxeWIDYOfwHP2mK2CzhHTzJYdUjG.png",
+                    alt: "Darkrise - drzewo umiejętności",
+                  },
+                  {
+                    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9j1gVwXBQHEQJgk7yU17IZwEwWdJ3C.png",
+                    alt: "Darkrise - system craftingu",
+                  },
                 ]}
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h3 className="text-xl font-bold mb-2">Knightblade: Rycerska Odyseja</h3>
+              <h3 className="text-xl font-bold mb-2">Darkrise: Pixel Action RPG</h3>
               <p className="mb-4 text-zinc-200">
-                Knightblade to nasza flagowa produkcja - retro gra RPG z otwartym światem, która łączy nostalgię za
-                klasycznymi grami z nowoczesnymi mechanikami rozgrywki. Gra została zaprojektowana z myślą o zapewnieniu
-                graczom pełnej swobody eksploracji i odkrywania fascynującego świata fantasy.
+                Darkrise to klasyczna hardkorowa gra RPG w stylu pixel art, stworzona przez niezależnych deweloperów.
+                Jest doskonałym przykładem naszych możliwości i pasji do tworzenia gier, które łączą nostalgię za
+                klasycznymi tytułami z nowoczesnymi mechanikami rozgrywki.
               </p>
               <p className="mb-4 text-zinc-200">
-                W Knightblade wcielasz się w postać, która przeprowadza się do małego miasteczka, aby rozpocząć nowe
-                życie jako farmer. Szybko jednak odkrywasz, że w okolicznych lochach kryje się mroczna tajemnica
-                związana z Bogiem śmierci i twoim rodzinnym dziedzictwem.
+                W grze wcielasz się w jedną z 4 klas postaci (Mag, Wojownik, Łucznik lub Rozbójnik), aby oczyścić
+                rodzinną krainę z goblinów, nieumarłych, demonów i armii sąsiednich krajów. Każda klasa posiada unikalne
+                umiejętności, mechaniki i cechy charakterystyczne.
               </p>
               <p className="mb-6 text-zinc-200">
-                Gra oferuje połączenie eksploracji otwartego świata, turowych walk z potworami, zarządzania farmą i
-                rozbudowanej fabuły. Wszystko to w pięknej, pikselowej oprawie graficznej, która przywołuje wspomnienia
-                złotej ery gier RPG.
+                Gra oferuje dynamiczny system walki, około 100 lokacji, 3 poziomy trudności oraz rozbudowany system
+                ekwipunku i craftingu. Wszystko to w pięknej, pikselowej oprawie graficznej, która przywołuje
+                wspomnienia złotej ery gier RPG.
               </p>
               <div className="flex flex-row gap-4">
                 <Link href="/knightblade">
                   <Button variant="outline">Dowiedz się więcej</Button>
                 </Link>
                 <Link
-                  href="https://play.google.com/store/apps/details?id=com.rpgmaker.only"
+                  href="https://play.google.com/store/apps/details?id=com.Roika.Darkrise"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -162,17 +182,16 @@ export default function ONasPage() {
               </div>
               <h3 className="text-xl font-bold">Rozwój</h3>
               <p className="text-zinc-400">
-                Nasz zespół programistów i artystów współpracuje, aby przekształcić projekt w działającą grę.
+                Nasz zespół programistów i artystów przekształca koncepcję w działającą grę, tworząc kod i assety.
               </p>
             </div>
             <div className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg border border-zinc-800">
               <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-xl font-bold">
                 4
               </div>
-              <h3 className="text-xl font-bold">Wydanie</h3>
+              <h3 className="text-xl font-bold">Testowanie</h3>
               <p className="text-zinc-400">
-                Po dokładnym testowaniu i dopracowaniu, wydajemy grę i zbieramy opinie graczy do przyszłych
-                aktualizacji.
+                Przeprowadzamy dokładne testy, aby wykryć i naprawić błędy oraz upewnić się, że gra jest zbalansowana.
               </p>
             </div>
           </div>
@@ -196,8 +215,8 @@ export default function ONasPage() {
                 <h3 className="text-xl font-bold">Adam Nowak</h3>
                 <p className="text-zinc-400 mb-2">Założyciel i dyrektor kreatywny</p>
                 <p className="text-zinc-400">
-                  Pasjonat gier retro z 15-letnim doświadczeniem w branży. Adam jest wizjonerem stojącym za koncepcją
-                  Knightblade.
+                  Pasjonat gier retro z 15-letnim doświadczeniem w branży. Adam jest wizjonerem stojącym za współpracą
+                  przy grze Darkrise.
                 </p>
               </CardContent>
             </Card>
@@ -206,17 +225,17 @@ export default function ONasPage() {
                 <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
                   <Image
                     src="/female-game-developer-portrait.png"
-                    alt="Główna programistka"
+                    alt="Główna projektantka"
                     width={200}
                     height={200}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <h3 className="text-xl font-bold">Marta Kowalska</h3>
-                <p className="text-zinc-400 mb-2">Główna programistka</p>
+                <p className="text-zinc-400 mb-2">Główna projektantka</p>
                 <p className="text-zinc-400">
-                  Ekspertka w dziedzinie programowania gier z pasją do tworzenia immersyjnych światów i płynnej
-                  rozgrywki.
+                  Ekspertka w dziedzinie projektowania gier z pasją do tworzenia dynamicznych systemów walki i rozwoju
+                  postaci.
                 </p>
               </CardContent>
             </Card>
@@ -270,8 +289,8 @@ export default function ONasPage() {
             </div>
             <div className="rounded-lg overflow-hidden border border-zinc-800">
               <Image
-                src="/modern-game-studio.png"
-                alt="Biuro VortexPlay Studio"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xWPBsupZm7mQYC7PZb7DZhWlQlSeYi.png"
+                alt="Magiczne ataki w grze Darkrise"
                 width={600}
                 height={400}
                 className="w-full h-auto"

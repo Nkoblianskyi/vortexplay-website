@@ -129,8 +129,9 @@ export function VideoPlayer({ src, poster, className = "" }: VideoPlayerProps) {
 
       {/* Nakładka z kontrolkami */}
       <div
-        className={`absolute inset-0 flex flex-col items-center justify-center bg-black/40 transition-opacity duration-300 ${showControls || !isPlaying ? "opacity-100" : "opacity-0 pointer-events-none"
-          }`}
+        className={`absolute inset-0 flex flex-col items-center justify-center bg-black/40 transition-opacity duration-300 ${
+          showControls || !isPlaying ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
       >
         <div className="flex-1 flex items-center justify-center">
           <div className="relative z-10 text-center space-y-4">

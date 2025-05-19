@@ -8,8 +8,8 @@ export function Hero() {
     <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/dark-fantasy-rpg-background.png"
-          alt="Tło gry Knightblade"
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-V3YLq4WSCJFBu58dcNyaXC2t859sjz.png"
+          alt="Tło gry Darkrise"
           fill
           className="object-cover opacity-40"
           priority
@@ -20,20 +20,19 @@ export function Hero() {
           <StaggerItem>
             <div className="space-y-2">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-                RYCERSKA ODYSEJA W ŚWIECIE PEŁNYM PRZYGÓD
+                DARKRISE - PIXEL ACTION RPG
               </h1>
               <p className="mx-auto max-w-[700px] text-lg text-zinc-200 md:text-xl">
-                Witamy w VortexPlay Studio, miejscu, gdzie nostalgia spotyka się z nowoczesną mechaniką gry! W naszej
-                grze Knightblade, retro-style open-world RPG, przenosisz się do fascynującego świata fantazji. Czy
-                jesteś gotowy na ekscytującą przygodę i odkrycie tajemnic swojej rodziny? Zostań mieszkańcem małego
-                miasteczka, zarządzaj swoją farmą i zanurz się w głębokich lochach pełnych potworów oraz skarbów.
+                Witamy w świecie Darkrise, klasycznej hardkorowej gry stworzonej przez niezależnych deweloperów w
+                nostalgicznym stylu pixel art! Wybierz jedną z 4 klas postaci, eksploruj 100 lokacji, walcz z unikalnymi
+                przeciwnikami i rozwijaj swoją postać w dynamicznym systemie walki. Czy jesteś gotowy na wyzwanie?
               </p>
             </div>
           </StaggerItem>
           <StaggerItem>
             <div className="hover:scale-105 transition-transform duration-300">
               <Link
-                href="https://play.google.com/store/apps/details?id=com.rpgmaker.only"
+                href="https://play.google.com/store/apps/details?id=com.Roika.Darkrise"
                 target="_blank"
                 rel="noopener noreferrer"
               >

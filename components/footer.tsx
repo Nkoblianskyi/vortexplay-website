@@ -65,7 +65,7 @@ export function Footer() {
                     className="hover:text-primary transition-colors duration-300"
                     onClick={handleClick}
                   >
-                    Knightblade
+                    Darkrise
                   </Link>
                 </li>
                 <li>
@@ -84,11 +84,11 @@ export function Footer() {
             <div className="space-y-4">
               <h3 className="text-xl font-bold">Pobierz grę</h3>
               <p className="text-zinc-400">
-                Knightblade jest dostępna na urządzeniach z systemem Android. Pobierz już teraz i rozpocznij swoją
+                Darkrise jest dostępna na urządzeniach z systemem Android. Pobierz już teraz i rozpocznij swoją
                 przygodę!
               </p>
               <Link
-                href="https://play.google.com/store/apps/details?id=com.rpgmaker.only"
+                href="https://play.google.com/store/apps/details?id=com.Roika.Darkrise"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block hover:scale-105 transition-transform duration-300"

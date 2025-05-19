@@ -100,9 +100,9 @@ export default function PolitykaCookiesPage() {
           <h2 className="text-2xl font-bold mb-4">6. Kontakt</h2>
           <p>
             W przypadku jakichkolwiek pytań dotyczących naszej polityki cookies, prosimy o kontakt pod adresem:{" "}
-            <p className="text-primary hover:underline">
+            <a href="mailto:info@vortexplaystudio.com" className="text-primary hover:underline">
               info@vortexplaystudio.com
-            </p>
+            </a>
           </p>
         </section>
       </div>
