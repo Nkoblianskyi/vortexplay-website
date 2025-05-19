@@ -104,9 +104,9 @@ export default function PolitykaPrivatnosciPage() {
           <h2 className="text-2xl font-bold mb-4">10. Kontakt</h2>
           <p>
             W przypadku jakichkolwiek pytań dotyczących naszej Polityki Prywatności, prosimy o kontakt pod adresem:{" "}
-            <a href="mailto:info@vortexplaystudio.com" className="text-primary hover:underline">
+            <p className="text-primary hover:underline">
               info@vortexplaystudio.com
-            </a>
+            </p>
           </p>
         </section>
       </div>
